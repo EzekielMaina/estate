@@ -1,0 +1,674 @@
+.typewriter .hy {
+  overflow: hidden;
+  border-right: 0.15em solid #2eca6a; /* Green color for the typewriter cursor */
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  font-size: 1.0em; /* Adjust the font size as needed */
+  animation: 
+    typing 10s steps(50, end),
+    blink-caret .75s step-end infinite;
+}
+.typewriter .ht {
+  overflow: hidden;
+  border-right: 0.15em solid #2eca6a;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  font-size: 1.0em;
+  animation: 
+    typing 10s steps(50, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  0%, 100% { width: 0 }
+  25%, 75% { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #2eca6a; }
+}
+
+/* Responsive adjustments for smaller screens */
+@media only screen and (max-width: 600px) {
+  .typewriter .ht {
+    font-size: 0.8em; /* Adjust the font size for smaller screens */
+  }
+  .typewriter .hy {
+    font-size: 0.8em; /* Adjust the font size for smaller screens */
+  }
+  .strategy {
+    font-size: 0.9em; /* Adjust the font size for smaller screens */
+  }
+}
+
+
+h1 {
+  font-size: 5em;
+  color: white;
+  text-transform: uppercase;
+}
+
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.crd{
+  content: initial;
+  backdrop-filter: blur(5px) saturate(200%);
+  -webkit-backdrop-filter: blur(5px) saturate(200%);
+  background-color: rgba(85, 85, 88, 0.11);
+  border-radius: 12px;
+  border: 0.5px solid rgba(255, 255, 255, 0.125);
+
+}
+
+#client-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+.card {
+  border: none; /* Remove card border */
+  transition: transform 0.2s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.bg-image {
+  position: relative;
+}
+.bg-image img {
+  width: 100%;
+  height: auto;
+}
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(251, 251, 251, 0.15);
+}
+/* Customize the style of the client list */
+#client-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.client-item {
+  text-align: center;
+  margin: 10px;
+}
+.client-logo {
+  max-width: 100%;
+  max-height: 100px; /* Adjust the maximum height as needed */
+}
+
+/* The container above the other element */
+.cont {
+  position: relative;
+  /* or absolute */
+  z-index: 2;
+  /* or any higher number */
+  padding-bottom: 0;
+  padding-top: 0;
+  padding: 0;
+  border-radius: 5px;
+  background-color: white;
+  margin-top: -115px;
+}
+
+ /* Customize the style of the card */
+ .custom-card {
+  max-width: 400px; /* Adjust the maximum width as needed */
+  margin: 20px;
+  border: none;
+}
+.card-img-top {
+  max-height: 200px; /* Adjust the maximum height of the image as needed */
+  object-fit: cover; /* Ensure the image covers the entire card */
+}
+
+.btn-color{
+  background: rgb(40, 240, 57);
+}
+.card{
+  border: none;
+}
+
+#map-container {
+  flex: 1;
+  overflow: hidden;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+#description {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+.content-d {
+  font-size: 16px;
+}
+
+.content-hidden {
+  display: none;
+}
+
+.see-more {
+  color: rgb(0, 255, 98);
+  cursor: pointer;
+  z-index: 2px  ;
+  margin-top: -35px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+.strategy {
+  border-bottom: 2px solid green;
+  display: inline-block; /* Make the span only as wide as its content */
+}
+
+.contact-section .form-control{
+  border: 1px solid  #2fbfbc;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  box-shadow: none;
+}
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  color: #101f1d;
+  font-size: 35px;
+  letter-spacing: 1.25px;
+  margin-top: 0;
+}
+.contact-fields {
+  padding: 40px 0 0;
+}
+.phone {
+  padding-top: 50px;
+}
+.phone,
+.email,
+.working-hours {
+  margin-bottom:30px;
+}
+.phone a,
+.email a,
+.location a {
+  color: #fd4f00;
+  font-size:18px;
+}
+.contact-h2 {
+  color: #fd4f00;
+  padding-top:20px;
+}
+.contact-fields .form-group {
+  margin-bottom: 35px;
+}
+.contact-info {
+  margin-top: -40px;
+}
+.contact-fields .form-group input,
+.contact-fields .form-group textarea {
+  font-size: 16px;
+}
+.location a.btn.btn-accent {
+  padding: 12px 26px 10px;
+  margin-top: 30px;
+  font-size: 16px;
+}
+.location a.btn.btn-accent img {
+  margin-right: 20px;
+}
+.location hr {
+  margin-bottom: 10px;
+}
+.btn {
+  font-size: 15px;
+  padding: 22px 46px 18px;
+  line-height: 1;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  position: relative;
+  letter-spacing: 0.3px;
+}
+.btn.btn-accent {
+  background: #2fbfbc;
+  color: white;
+}
+.btn.btn-accent:hover {
+  background: #269694;
+}
+.ct-newsletter-section .container {
+  width: 100%;
+  max-width: 1360px;
+}
+.ct-section-head,
+.ct-section-header {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  color: #101f1d;
+  font-size: 35px;
+  text-transform: uppercase;
+  padding-top: 45px;
+  letter-spacing: 1.25px;
+  margin-bottom: 5px;
+}
+.ct-section-header {
+  text-align: center;
+}
+.ct-newsletter-inline {
+  display: table;
+  width: 100%;
+  color: white;
+  margin: 69px 0 138px;
+  text-align: center;
+}
+.ct-newsletter-inline__facebook {
+  background-color: #3b5997;
+}
+.ct-newsletter-inline__facebook, .ct-newsletter-inline__twitter {
+  width: 16%;
+}
+a {
+  -webkit-transition: all 250ms cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 250ms cubic-bezier(0.55, 0, 0.1, 1);
+}
+.ct-newsletter-inline__facebook i, .ct-newsletter-inline__twitter i {
+  font-size: 109px;
+  padding-top: 25px;
+}
+.ct-newsletter-inline__facebook span, 
+.ct-newsletter-inline__twitter span {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 4px;
+  display: block;
+  padding-top: 15px;
+}
+.ct-newsletter-inline__twitter {
+  background-color: #2fc2ee;
+}
+.ct-newsletter-inline__facebook, 
+.ct-newsletter-inline__twitter {
+  width: 16%;
+  padding-top: 25px;
+}
+.ct-newsletter-inline__form {
+  background-color: #fd4f00;
+  padding: 24px;
+}
+.ct-newsletter-inline__form .ct-newsletter {
+  text-align: left;
+  width: 100%;
+  max-width: 668px;
+  margin: 0px auto;
+}
+.ct-newsletter-inline__form .form-inline {
+  display: table;
+  width: 100%;
+  height: 65px;
+}
+.ct-newsletter-inline__form .form-inline input {
+  width: 50%;
+  width: calc(100% - 137px);
+  padding: 0 40px;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  color: #111f1d;
+  text-transform: uppercase;
+}
+.ct-newsletter-inline__form .form-inline input, 
+.ct-newsletter-inline__form .form-inline .btn {
+  display: table-cell;
+  vertical-align: middle;
+  height: 65px;
+  border: none;
+  margin: 0;
+}
+.ct-newsletter-inline__form .form-inline .btn {
+  width: 137px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+  padding-left: 0;
+  padding-right: 3px;
+  text-align: center;
+}
+.ct-newsletter-inline__form .form-inline input, .ct-newsletter-inline__form .form-inline .btn {
+  display: table-cell;
+  vertical-align: middle;
+  height: 65px;
+  border: none;
+  margin: 0;
+}
+.btn.btn-dark {
+  background: #111f1d;
+  color: white;
+}
+.btn {
+  font-size: 15px;
+  padding: 22px 46px 18px;
+  line-height: 1;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  position: relative;
+  letter-spacing: 0.3px;
+}
+@media screen and (min-width: 980px) {
+  .contact-info {
+    padding-left: 110px;
+  }
+}
+
+.footer .btn.btn-social {
+  margin-right: 5px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light);
+  font-weight: normal;
+  border: 1px solid #FFFFFF;
+  border-radius: 35px;
+  transition: .3s;
+}
+
+.footer .btn.btn-social:hover {
+  color: var(--primary);
+}
+
+.footer .btn.btn-link {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: capitalize;
+  transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+  letter-spacing: 1px;
+  box-shadow: none;
+}
+
+.footer .copyright {
+  padding: 25px 0;
+  font-size: 15px;
+  border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+  color: var(--light);
+}
+
+.footer .footer-menu a {
+  margin-right: 15px;
+  padding-right: 15px;
+  border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.footer .footer-menu a:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: none;
+}
+.chatbot-mask {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  padding: 32px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.chatbot-mask.hidden {
+  display: none;
+}
+.chatbot {
+  width: 360px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  height: 100%;
+  max-height: 520px;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.chatbot-header {
+  background-color: rgba(0, 0, 0, 0.85);
+  height: 48px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 8px 8px 0 0;
+  gap: 8px;
+  cursor: pointer;
+}
+.chatbot-title {
+  flex: 1;
+}
+.chatbot-icon {
+  height: 24px;
+  width: 24px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+.chatbot-avatar {
+  background-image: url(https://i.imgur.com/qHBWCRy.png);
+  cursor: auto;
+}
+.chatbot-close {
+  background-image: url(https://i.imgur.com/h8HDqjE.png);
+}
+.chatbot-input {
+  height: 48px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.chatbot-input input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 0 56px 0 16px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.85);
+}
+.chatbot-send {
+  background-image: url(https://i.imgur.com/efZdDzY.png);
+  filter: invert(24%) sepia(99%) saturate(1459%) hue-rotate(187deg)
+    brightness(106%) contrast(102%);
+  position: absolute;
+  right: 16px;
+}
+.chatbot-input:not(.disabled) .chatbot-send:hover {
+  filter: invert(53%) sepia(35%) saturate(5612%) hue-rotate(181deg)
+    brightness(90%) contrast(84%);
+}
+.chatbot-input.disabled .chatbot-send {
+  filter: invert(83%) sepia(0%) saturate(0%) hue-rotate(243deg) brightness(91%)
+    contrast(97%);
+}
+.chatbot-content {
+  color: rgba(0, 0, 0, 0.85);
+}
+input::placeholder {
+  color: rgba(0, 0, 0, 0.45);
+}
+.chatbot-display-area {
+  flex: 1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.chatbot-display-area > div {
+  padding: 16px 16px 0 16px;
+  display: flex;
+  flex-direction: column;
+}
+.bubble {
+  padding: 12px 16px;
+  position: relative;
+  margin-bottom: 16px;
+  max-width: 280px;
+  box-sizing: border-box;
+}
+.bubble-from-bot {
+  background-color: rgba(0, 0, 0, 0.06);
+  border-radius: 0px 8px 8px 8px;
+}
+.bubble-from-me {
+  background-color: #0070c9;
+  border-radius: 8px 8px 0 8px;
+  color: white;
+  align-self: flex-end;
+}
+.bubble:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.bubble.bubble-from-bot:before {
+  left: -8px;
+  top: 0;
+  border-width: 0 8px 8px 0;
+  border-color: transparent rgba(0, 0, 0, 0.06) transparent transparent;
+}
+.bubble.bubble-from-me:before {
+  right: -8px;
+  bottom: 0;
+  border-width: 8px 0 0 8px;
+  border-color: transparent transparent transparent #0070c9;
+}
+.button-group {
+  margin: 16px 0 -4px 0;
+}
+.button-group > button {
+  width: 100%;
+  min-width: 240px !important;
+  margin: 8px 0;
+}
+.chatbot-portal {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://i.imgur.com/PDBM7Nb.png);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+}
+.chatbot-portal.hidden {
+  display: none;
+}
+
+/* ISP 原生按鈕樣式 */
+
+button {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 內容物置中 */
+  padding: 0 12px; /* 元件內部之左右留空 12px */
+  gap: 4px; /* Icon 與 Wording 的間距 */
+  border: none; /* 洗掉按鈕預設的樣式 */
+  outline: inherit; /* 洗掉按鈕預設的樣式 */
+  border-radius: 4px;
+  cursor: pointer;
+}
+button > .wording {
+  padding: 0 4px; /* 無論 Icon 出現與否，都能確保文案與邊界留有 16px 的距離，且與 Icon 間距 8px */
+}
+button.medium-button {
+  font-size: 14px;
+  height: 36px;
+  min-width: 36px /* 當 Button 沒有 Label 只剩 Icon 時的寬度 */;
+}
+button.medium-button > .icon {
+  width: 18px;
+  height: 18px;
+}
+button.secondary-button {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.85); /* 包括 Icon */
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+button.secondary-button:hover,
+button.secondary-button:focus {
+  color: #0070c9; /* 包括 Icon */
+  border-color: #0070c9;
+}
+button.secondary-button:active {
+  color: #0054a3; /* 包括 Icon */
+  border-color: #0054a3;
+}
+button.link-button {
+  background-color: transparent;
+  color: #0070c9; /* 包括 Icon */
+}
+button.link-button:hover,
+button.link-button:focus {
+  color: #228bd6; /* 包括 Icon */
+}
+button.link-button:active {
+  color: #0054a3; /* 包括 Icon */
+}
